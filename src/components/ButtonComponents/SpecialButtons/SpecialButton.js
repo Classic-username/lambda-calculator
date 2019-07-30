@@ -1,9 +1,10 @@
-import React from "react";
+import React, { PropTypes } from "react";
 import { tsPropertySignature } from "@babel/types";
+import { ReactComponent } from "*.svg";
 
 const SpecialButton = (props) => {
   return (
-    <button className='button' className='special-button'>{props.special}</button>
+    <button className={classNames}>{props.special}</button>
   );
 };
 
