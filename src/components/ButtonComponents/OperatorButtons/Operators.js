@@ -5,14 +5,22 @@ import OperatorButton from './OperatorButton.js';
 //Import your array data to from the provided data file
 import { operators } from '../../../data';
 
-const Operators = () => {
+const Operators = ({ updateValue, calculateValue }) => {
   const [ operatorState, setOperatorState] = useState(operators);
+
+  const clickOperatorBtn = btn => {
+    if(btn === '=') {
+      calculateValue();
+    } else {
+      updateValue(btn);
+    }
+  }
   return (
     <div>
       {
         operatorState.map(opp => {
           return (
-            <OperatorButton operator={opp}/>
+            <OperatorButton operator={opp} clickOperatorBtn={() => clickOperatorBtn(opp.value)} />
           )
           
         })

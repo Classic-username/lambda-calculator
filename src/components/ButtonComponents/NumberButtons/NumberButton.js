@@ -4,7 +4,14 @@ import React from "react";
 const NumberButton = (props) => {
   
   return (
-    <button className='number-button' className='button'>{props.number}</button>
+    <>
+    {props.number === '0'
+      ? <button onClick={props.clickNumberBtn} name='zero'>{props.number}</button>
+      :
+
+    <button onClick={props.clickNumberBtn} className='number-button' >{props.number}</button>
+  }
+  </>
   );
 };
 
