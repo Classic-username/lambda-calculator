@@ -1,0 +1,80 @@
+.container {
+    border: 2px solid black;
+    width: 525px;
+    height: 693px;
+    background: #222425;
+}
+
+.App {
+    background: #A71D36;
+    width: 451px;
+    padding: 35px;
+    border-radius: 10px;
+    border: 2px solid #515151;
+}
+
+.logo {
+    max-width: 125px;
+}
+.display{
+    background: #323335;
+    color: #f2f3f3;
+    margin: 17px 0;
+    height: 100px;
+    width: 400px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.display > span {
+    margin-right: 15px;
+    font-size: 3rem;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-container button {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin: 5px 13px;
+    font-size: 2rem;
+    color: #f2f3f3;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.6)
+}
+.buttons-container button[name='zero']{
+    width: 185px;
+    border-radius: 40px;
+    background: #184379;
+}
+.number-button {
+    background: #184379
+}
+.operator-button {
+    background: #247293
+}
+.special-button {
+    background: #225D9E
+}
+
+/* .container {
+    background: #A71D36;
+    width: 472px;
+    height: 709px;
+    border: 2px solid black;
+}
+
+div.App {
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin: 1px;
+} */
